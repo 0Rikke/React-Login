@@ -1,0 +1,12 @@
+.msg{
+    position: fixed;
+    justify-content:end;
+    align-items:center;
+    right: 100px;
+    background-color: black;
+    color: white;
+    height: 50px;
+    width: 500px;
+    padding: 15px;
+    border-radius: 10px;
+}
