@@ -2,8 +2,8 @@ import React, { useState } from "react";
 import { Input } from "../Input";
 import axios from "axios";
 import { Mensagem } from "../Mensagem";
-
-export const Login = () => {
+import "./form.css";
+export const Login = ({show}) => {
 
     const [user, setUser] = useState("");
     const [pass, setPass] = useState("");
@@ -14,11 +14,13 @@ export const Login = () => {
     const handlePass = ({ target }) => setPass(target.value)
 
     const requestlogin = async() => {
-        const request = await axios.post("http://localhost:8081/api/logUser",{
+        const request = await axios.post("http://localhost:8082/api/logUser",{
             name:user,
             password:pass
         });
         setMsg(request.data.msg);
+        setPass("");
+        setUser("");
 
         setVisi("flex");
         setTimeout(()=>{
@@ -33,6 +35,10 @@ export const Login = () => {
                 <Input func={handlePass} name={"password"} value={pass} type={"password"} />
                 <button type="button" onClick={requestlogin}>submit</button>
             </form>
+            <div className="DivBut">
+                <button type="button" onClick={show}>Cadastrar</button>
+            </div>
+            
             {
                 msg !== "" && <Mensagem style={visi}msg={msg}/>
             }

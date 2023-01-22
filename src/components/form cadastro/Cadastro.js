@@ -19,11 +19,13 @@ export const Cadastro = ({show}) => {
             return window.alert("preencah todos os campos");
         }
 
-        const request = await axios.post("http://localhost:8081/api/CreateUsers", {
+        const request = await axios.post("http://localhost:8082/api/CreateUsers", {
             name: user,
             password: pass
         })
         setMsg(request.data.msg);
+        setPass("");
+        setUser("");
 
         setVisi("flex");
         setTimeout(()=>{

@@ -1,12 +1,13 @@
 .msg{
     position: fixed;
-    justify-content:end;
     align-items:center;
-    right: 100px;
+    left: 50px;
+    bottom: 50px;
     background-color: black;
     color: white;
     height: 50px;
     width: 500px;
     padding: 15px;
     border-radius: 10px;
+    z-index: 3;
 }

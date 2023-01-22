@@ -1,0 +1,75 @@
+@font-face {
+    font-family: 'fonte minha';
+    src: url('./fonts/ModernSans-Light.otf') format('opentype');
+  }
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family:fonte minha; 
+    font-size: 20px;
+}
+
+.LoguinContainer {
+    margin: 15px;
+    padding: 50px;
+
+}
+
+.Cadastrocontainer {
+    padding: 50px;
+    z-index: 2;
+
+}
+
+.triangulo {
+    border-left: 100px solid transparent;
+    border-right: 0px solid transparent;
+    border-bottom: 100vh solid #5386E4;
+    transform: rotate(0deg);
+
+}
+
+.square {
+   
+    display: flex;
+    justify-content: center;
+    background-color: #5386E4;
+    height: 100vh;
+    width: 45vw;
+
+}
+
+.Divisor {
+    display: flex;
+    position: fixed;
+    top: 0px;
+    right: 0px;
+}
+
+
+.main {
+    display: flex;
+    justify-content: center;
+
+    width: 45vw;
+    height: 100vh;
+}
+
+button{
+    height: 30px;
+    width: 150px;
+    margin-top: 15px;
+    background-color:  grey;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    font-size: 20px;
+    cursor: pointer;
+
+}
+
+button:hover{
+    transition: 0.6s;
+    transform: scale(1.15);
+}
