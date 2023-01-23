@@ -1,0 +1,16 @@
+.Cadastrocontainer form{
+        width: 70vw;
+}
+
+.mainCad{
+    display: flex;
+    justify-content: end;
+    margin: 5%;
+}
+
+
+.Cadastrocontainer button{
+    width: 58vw;
+}
+
+

@@ -1,40 +1,51 @@
 @font-face {
     font-family: 'fonte minha';
     src: url('./fonts/ModernSans-Light.otf') format('opentype');
-  }
+
+    font-family: "pokomon";
+    src: url("./fonts/Pokemon\ Solid.ttf");
+}
+
+:root {
+
+    --red_1: rgba(227, 41, 59, 1);
+    --red_2: rgba(204, 51, 66, 1);
+    --red_3: rgba(219, 84, 97, 1);
+    --yellow: rgba(254, 224, 49, 1);
+    --tblue: rgba(57, 107, 185, 1);
+    --silver: rgba(197, 198, 195, 1);
+    --alice-blue: rgba(227, 242, 253, 1);
+}
 
 * {
     margin: 0px;
     padding: 0px;
-    font-family:fonte minha; 
-    font-size: 20px;
+    font-family: fonte minha;
+    font-size: 25px;
 }
 
 .LoguinContainer {
+    display: flex;
     margin: 15px;
     padding: 50px;
 
 }
 
-.Cadastrocontainer {
-    padding: 50px;
-    z-index: 2;
-
-}
 
 .triangulo {
-    border-left: 100px solid transparent;
+    border-left: 150px solid transparent;
     border-right: 0px solid transparent;
-    border-bottom: 100vh solid #5386E4;
+    border-bottom: 100vh solid var(--red_1);
     transform: rotate(0deg);
 
 }
 
 .square {
-   
+
     display: flex;
     justify-content: center;
-    background-color: #5386E4;
+    align-items: center;
+    background-color: var(--red_1);
     height: 100vh;
     width: 45vw;
 
@@ -47,20 +58,20 @@
     right: 0px;
 }
 
-
 .main {
-    display: flex;
-    justify-content: center;
-
+    margin-left: 45px;
+    margin-top: 45px;
     width: 45vw;
-    height: 100vh;
+
 }
 
-button{
-    height: 30px;
-    width: 150px;
+button {
+
+    font-weight: 1000;
+    height: 40px;
+    width: 85%;
     margin-top: 15px;
-    background-color:  grey;
+    background-color: var(--yellow);
     color: white;
     border: none;
     border-radius: 3px;
@@ -69,7 +80,7 @@ button{
 
 }
 
-button:hover{
+button:hover {
     transition: 0.6s;
-    transform: scale(1.15);
+    transform: scale(1.05);
 }
