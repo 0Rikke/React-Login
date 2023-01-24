@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import axios from "axios";
 import "./display.css"
+import { List } from "./List";
 export const Display = ({selected}) => {
 
     const [pokemon, setPokemon] = useState([]);
@@ -24,12 +25,19 @@ export const Display = ({selected}) => {
                 <h1>{firstToUpper(pokemon.name)}</h1>
             </div>
             <div className="dispMain">
-                
-                
-                <img className="ImgPoke" src={pokemon.sprites.front_default} alt="imgame pokemon" />
+                <div>
+                    <img className="ImgPoke" src={pokemon.sprites.front_default} alt="imgame pokemon" />
+                </div>
+                <div>
+                    <ul>
+                        <List pokemon={pokemon} />
+                    </ul>
+                </div>
             </div>
             </>
         )}
+
+                     
             
         </>
     )

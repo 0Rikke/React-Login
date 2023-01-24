@@ -1,8 +1,5 @@
 .dispMain{
-    display: flex;
-    justify-content:center;
-    align-items:center;
-    z-index: 1;
+    margin-top: 13vh;
 }
 
 .ImgPoke{
@@ -13,17 +10,17 @@
 .titlePoke{
     left: 0px;
     position: fixed;
-    border-top: 80px solid var(--silver);
-    border-left: 40px solid var(--silver);
+    border-top: 5vw solid var(--silver);
+    border-left: 10vh solid var(--silver);
     border-right: 30px solid transparent;
     height: 0;
     width: 50vw;
-    box-shadow: -5px -5px black;
+    box-shadow: -5px -5px var(--yellow);
 }
 
 h1{
     -webkit-text-stroke: 2px black;
-    font-size: 50px;
+    font-size: 8vh;
     color: white; 
     font-weight: 1000;
     top: 22vh;
