@@ -1,0 +1,21 @@
+.pokemon{
+
+    margin: 10px;
+    padding: 10px;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 250px;
+    background-color: white;
+    border-radius: 40px;
+
+}
+
+.pokemon > img {
+    max-height: 6vh;
+}
+
+#icon{
+    
+    max-height: 50px;
+}

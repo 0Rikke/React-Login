@@ -1,8 +1,8 @@
 @font-face {
-    font-family: 'fonte minha';
+    font-family: 'fonte sans';
     src: url('./fonts/ModernSans-Light.otf') format('opentype');
 
-    font-family: "pokomon";
+    font-family: "pokemon";
     src: url("./fonts/Pokemon\ Solid.ttf");
 }
 
@@ -12,7 +12,7 @@
     --red_2: rgba(204, 51, 66, 1);
     --red_3: rgba(219, 84, 97, 1);
     --yellow: rgba(254, 224, 49, 1);
-    --tblue: rgba(57, 107, 185, 1);
+    --blue: rgba(57, 107, 185, 1);
     --silver: rgba(197, 198, 195, 1);
     --alice-blue: rgba(227, 242, 253, 1);
 }

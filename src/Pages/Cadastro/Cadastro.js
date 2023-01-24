@@ -23,7 +23,7 @@ export const Cadastro = () => {
             return window.alert("OPS ALGO DEU ERRADO VERIFIQUE OS DADOS");
         }
 
-        const request = await axios.post("http://localhost:8082/api/CreateUsers", {
+        const request = await axios.post("http://localhost:8081/api/CreateUsers", {
             name: user,
             password: pass
         })

@@ -5,9 +5,12 @@ import { Mensagem } from "../../components/Mensagem";
 import "./form.css";
 import { Link } from "react-router-dom";
 import pokebola from "./pokebola.png"
+import { useNavigate } from "react-router-dom";
+
 export const Login = () => {
 
- const [user, setUser] = useState("");
+    const navegation = useNavigate();
+    const [user, setUser] = useState("");
     const [pass, setPass] = useState("");
     const [msg, setMsg] = useState("");
     const [visi,setVisi] = useState("");
@@ -16,19 +19,23 @@ export const Login = () => {
     const handlePass = ({ target }) => setPass(target.value)
 
     const requestlogin = async() => {
-        const request = await axios.post("http://localhost:8082/api/logUser",{
+        const request = await axios.post("http://localhost:8081/api/logUser",{
             name:user,
             password:pass
         });
-        setMsg(request.data.msg);
+        const login = request.data;
+        setMsg(login.msg);
         setPass("");
         setUser("");
 
         setVisi("flex");
         setTimeout(()=>{
             setVisi("none");
-        },5000)
-
+            if(login.token.length !== 0 ){
+                navegation("/pokehome")
+            }
+        },1000)
+        
     }   
     return (
         <div className="main">

@@ -1,0 +1,31 @@
+.dispMain{
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    z-index: 1;
+}
+
+.ImgPoke{
+    height: fit-content;
+    max-height: 30vh;
+}
+
+.titlePoke{
+    left: 0px;
+    position: fixed;
+    border-top: 80px solid var(--silver);
+    border-left: 40px solid var(--silver);
+    border-right: 30px solid transparent;
+    height: 0;
+    width: 50vw;
+    box-shadow: -5px -5px black;
+}
+
+h1{
+    -webkit-text-stroke: 2px black;
+    font-size: 50px;
+    color: white; 
+    font-weight: 1000;
+    top: 22vh;
+    position: fixed;
+}
